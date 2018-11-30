@@ -19,8 +19,8 @@ namespace ConsoleApp1
                 if (employee.IsHooky == true) Console.WriteLine(employee.Name + ' ' + employee.SurName + " ПОСМЕЛ НЕ ЯВИТЬСЯ НА РАБОТУ!!!");
                 else
                 {
-                    budget -= 35000;
-                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "35000");
+                    budget -= employee.Price;
+                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "{0}",employee.Price);
                 }
             }
             foreach (Mechanic employee in mechanics)
@@ -28,8 +28,8 @@ namespace ConsoleApp1
                 if (employee.IsHooky == true) Console.WriteLine(employee.Name + ' ' + employee.SurName + " ПОСМЕЛ НЕ ЯВИТЬСЯ НА РАБОТУ!!!");
                 else
                 {
-                    budget -= 20000;
-                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "20000");
+                    budget -= employee.Price;
+                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "{0}", employee.Price);
                 }
             }
             foreach (Worker employee in workers)
@@ -37,8 +37,8 @@ namespace ConsoleApp1
                 if (employee.IsHooky == true) Console.WriteLine(employee.Name + ' ' + employee.SurName + " ПОСМЕЛ НЕ ЯВИТЬСЯ НА РАБОТУ!!!");
                 else
                 {
-                    budget -= 10000;
-                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "10000");
+                    budget -= employee.Price;
+                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "{0}", employee.Price);
                 }
             }
             foreach (Guard employee in guards)
@@ -46,8 +46,8 @@ namespace ConsoleApp1
                 if (employee.IsHooky == true) Console.WriteLine(employee.Name + ' ' + employee.SurName + " ПОСМЕЛ НЕ ЯВИТЬСЯ НА РАБОТУ!!!");
                 else
                 {
-                    budget -= 8000;
-                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "8000");
+                    budget -= employee.Price;
+                    Console.WriteLine(employee.Name + ' ' + employee.SurName + ": " + "{0}", employee.Price);
                 }
             }
             Console.WriteLine("\n-----------------------\nКОНЕЦ ВЫПЛАТ\n-----------------------\n");

@@ -43,8 +43,7 @@ namespace ConsoleApp1
 
 
                 bookkeeping.Work(ref allGeologists, ref allMechanics, ref allWorkers, ref allGuards, ref budget, ref projectNumber);
-
-                Console.WriteLine("Всего рабочих:" + allWorkers.Count);
+                
                 Console.WriteLine("Оставшийся бюджет: " + budget);
                 Console.ReadLine();
                 Console.Clear();

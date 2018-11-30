@@ -8,7 +8,8 @@ namespace ConsoleApp1
     class Worker : NameGenerator, IWork
     {
         private static Random random = new Random();
-        public Worker(string name, string surName) : base(name, surName) { }
+        public Worker(string name, string surName, int price) : base(name, surName, price) { }
+        public override int Price { get => base.Price; set => base.Price = value; }
         public void Work()
         {
             Console.Write("Рабочий " + Name + ' ' + SurName + ' ');

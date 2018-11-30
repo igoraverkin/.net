@@ -8,7 +8,7 @@ namespace ConsoleApp1
     class Guard: NameGenerator, IWork
     {
         private static Random random = new Random();
-        public Guard(string name, string surName) : base(name, surName) { }
+        public Guard(string name, string surName, int price) : base(name, surName, price) { }
         public void Work()
         {
             Console.Write("Охранник " + Name + ' ' + SurName + ' ');

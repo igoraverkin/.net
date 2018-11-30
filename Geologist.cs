@@ -8,7 +8,7 @@ namespace ConsoleApp1
     class Geologist: NameGenerator, IWork
     {
         private static Random random = new Random();
-        public Geologist(string name, string surName) : base(name, surName) { }
+        public Geologist(string name, string surName, int price) : base(name, surName, price) { }
         public void Work()
         {
             Console.Write("Геолог " + Name + ' ' + SurName + ' ');
@@ -18,7 +18,7 @@ namespace ConsoleApp1
                 case 1: Console.WriteLine("устанавливает флаги"); break;
                 case 2: Console.WriteLine("документирует работу"); break;
                 case 3: Console.WriteLine("производит проверку"); break;
-                case 4: Console.WriteLine("Не явился на работу");  IsHooky = true; break;
+                case 4: Console.WriteLine("не явился на работу");  IsHooky = true; break;
             }
         }
     }
